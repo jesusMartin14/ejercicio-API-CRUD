@@ -21,7 +21,6 @@ if (isset($_POST['formLogin'])) {
         session_start();
         $_SESSION['logged'] = true;
         header('location:index.php?mod=users&page=1&logged=true');
-        die();
     } else {
         $error = true;
     }
